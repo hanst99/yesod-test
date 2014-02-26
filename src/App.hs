@@ -37,5 +37,5 @@ getPage2R = defaultLayout [whamlet|
     |]
 
 
-runApp ::  IO ()
-runApp = warp 3000 Links
+runApp :: Int -> IO ()
+runApp port = warp port Links
